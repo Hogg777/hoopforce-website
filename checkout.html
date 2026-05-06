@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HoopForce Checkout</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-icon"></div>
+    HOOPFORCE
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="checkout.html" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle">Dark / Light</button>
+  </div>
+</nav>
+
+<section class="section">
+  <h2 class="section-title">Your Cart</h2>
+  <div id="cart-items" class="grid"></div>
+
+  <div style="margin-top:30px; text-align:center;">
+    <p style="margin-bottom:10px;">Total: <span id="cart-total">£0</span></p>
+    <button class="btn-primary" id="real-checkout">Proceed to Secure Checkout</button>
+    <button class="btn-ghost" id="clear-cart" style="margin-left:10px;">Clear Cart</button>
+    <p style="margin-top:10px; font-size:12px; color:var(--gray);">
+      Connect this button to your real Shopify or Stripe checkout link when you're ready.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-title">HoopForce Gear</div>
+  <p>Every possession matters. So does every purchase.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
